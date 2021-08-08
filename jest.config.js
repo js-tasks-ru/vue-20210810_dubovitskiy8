@@ -24,6 +24,9 @@ const config = {
   // Serializer for Vue snapshots
   snapshotSerializers: ['jest-serializer-vue'],
 
+  // Add taskbook utilities
+  setupFilesAfterEnv: ['<rootDir>/utility_modules/taskbook-jest-setup.js'],
+
   testMatch: ['**/__tests__/**/*.(spec|test|student-test).[jt]s?(x)'],
   // https://github.com/facebook/jest/issues/6766
   testURL: 'http://localhost/',
@@ -40,7 +43,7 @@ const config = {
 
 if (process.env.TASK_MONITOR) {
   Object.assign(config, {
-    testResultsProcessor: './utility_modules/taskbook-test-results-processor.js',
+    testResultsProcessor: '<rootDir>/utility_modules/taskbook-test-results-processor.js',
     reporters: [],
   });
 }

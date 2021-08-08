@@ -25,12 +25,13 @@ module.exports = {
     'no-var': 'error',
     // Vue / Priority A: Essential Essential
     'vue/no-unused-components': 'off', // For task start code
+    'vue/require-v-for-key': 'warn', // Unknown error in the beginning
     'vue/valid-template-root': 'off', // For task start code
     // Vue / Priority B: Strongly Recommended
     'vue/v-bind-style': 'error',
     'vue/v-on-style': 'error',
     'vue/v-slot-style': 'error',
-    'vue/require-explicit-emits': 'error',
+    'vue/require-explicit-emits': 'warn',
     'vue/mustache-interpolation-spacing': 'warn',
     'vue/no-template-shadow': 'warn',
     // Vue / Priority C: Recommended
@@ -39,13 +40,11 @@ module.exports = {
     'vue/new-line-between-multi-line-property': process.env.TASK_DEV ? 'error' : 'off',
     'vue/this-in-template': 'error',
     // Vue / Uncategorized
-    'vue/match-component-file-name': 'error',
+    'vue/match-component-file-name': process.env.TASK_DEV ? 'error' : 'off',
     'vue/no-duplicate-attr-inheritance': 'error',
-    'vue/no-restricted-call-after-await': 'error',
-    'vue/no-useless-v-bind': 'error',
-    'vue/padding-line-between-blocks': 'error',
+    'vue/no-useless-v-bind': process.env.TASK_DEV ? 'error' : 'warn',
+    'vue/padding-line-between-blocks': process.env.TASK_DEV ? 'error' : 'warn',
     'vue/v-for-delimiter-style': 'error',
-    'vue/valid-next-tick': 'error',
   },
 
   overrides: [
