@@ -9,13 +9,10 @@ export default defineComponent({
     },
   },
   methods: {
-    counter(count) {
-      this.$emit('update:count', ++count);
+    counter() {
+      this.$emit('update:count', this.count + 1);
     },
   },
 
-  // Шаблон лучше держать максимально простым, а логику выносить в методы
-
-  // Шаблон потребуется отредактировать
-  template: `<button @click="counter(count)" type="button">{{ count }}</button>`,
+  template: `<button @click="counter" type="button">{{ count }}</button>`,
 });
