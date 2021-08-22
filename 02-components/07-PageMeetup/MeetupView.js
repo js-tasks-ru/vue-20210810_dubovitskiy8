@@ -2,6 +2,7 @@ import { defineComponent } from './vendor/vue.esm-browser.js';
 import UiAlert from './UiAlert.js';
 import UiContainer from './UiContainer.js';
 import MeetupAgenda from './MeetupAgenda.js';
+import MeetupAgendaItem from './MeetupAgendaItem.js';
 import MeetupDescription from './MeetupDescription.js';
 import MeetupCover from './MeetupCover.js';
 import MeetupInfo from './MeetupInfo.js';
@@ -13,6 +14,7 @@ export default defineComponent({
     UiAlert,
     UiContainer,
     MeetupAgenda,
+    MeetupAgendaItem,
     MeetupDescription,
     MeetupCover,
     MeetupInfo,

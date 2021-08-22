@@ -8,7 +8,7 @@ export default defineComponent({
   },
   props: {
     agenda: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },
