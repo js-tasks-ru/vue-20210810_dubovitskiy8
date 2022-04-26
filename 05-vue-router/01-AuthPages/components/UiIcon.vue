@@ -3,24 +3,42 @@
 </template>
 
 <script>
+import AlertCircle from '@/assets/icons/icon-alert-circle.svg';
+import CalSm from '@/assets/icons/icon-cal-sm.svg';
+import CalLg from '@/assets/icons/icon-cal-lg.svg';
+import Check from '@/assets/icons/icon-check.svg';
+import CheckCircle from '@/assets/icons/icon-check-circle.svg';
+import ChevronDown from '@/assets/icons/icon-chevron-down.svg';
+import Clock from '@/assets/icons/icon-clock.svg';
+import Coffee from '@/assets/icons/icon-coffee.svg';
+import Key from '@/assets/icons/icon-key.svg';
+import List from '@/assets/icons/icon-list.svg';
+import Map from '@/assets/icons/icon-map.svg';
+import PenTool from '@/assets/icons/icon-pen-tool.svg';
+import PillActive from '@/assets/icons/icon-pill-active.svg';
+import Search from '@/assets/icons/icon-search.svg';
+import Trash from '@/assets/icons/icon-trash.svg';
+import Tv from '@/assets/icons/icon-tv.svg';
+import User from '@/assets/icons/icon-user.svg';
+
 const icons = {
-  'alert-circle': require('@/assets/icons/icon-alert-circle.svg'),
-  'cal-sm': require('@/assets/icons/icon-cal-sm.svg'),
-  'cal-lg': require('@/assets/icons/icon-cal-lg.svg'),
-  check: require('@/assets/icons/icon-check.svg'),
-  'check-circle': require('@/assets/icons/icon-check-circle.svg'),
-  'chevron-down': require('@/assets/icons/icon-chevron-down.svg'),
-  clock: require('@/assets/icons/icon-clock.svg'),
-  coffee: require('@/assets/icons/icon-coffee.svg'),
-  key: require('@/assets/icons/icon-key.svg'),
-  list: require('@/assets/icons/icon-list.svg'),
-  map: require('@/assets/icons/icon-map.svg'),
-  'pen-tool': require('@/assets/icons/icon-trash.svg'),
-  'pill-active': require('@/assets/icons/icon-pill-active.svg'),
-  search: require('@/assets/icons/icon-search.svg'),
-  trash: require('@/assets/icons/icon-trash.svg'),
-  tv: require('@/assets/icons/icon-tv.svg'),
-  user: require('@/assets/icons/icon-user.svg'),
+  'alert-circle': AlertCircle,
+  'cal-sm': CalSm,
+  'cal-lg': CalLg,
+  check: Check,
+  'check-circle': CheckCircle,
+  'chevron-down': ChevronDown,
+  clock: Clock,
+  coffee: Coffee,
+  key: Key,
+  list: List,
+  map: Map,
+  'pen-tool': PenTool,
+  'pill-active': PillActive,
+  search: Search,
+  trash: Trash,
+  tv: Tv,
+  user: User,
 };
 
 export default {
